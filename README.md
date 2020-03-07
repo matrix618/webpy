@@ -9,9 +9,9 @@ phpStudy
 
 quote website
 
-[（1）-web.py简介和安装](https://blog.csdn.net/caimouse/article/details/79254632   
-[（2）-URL处理](https://blog.csdn.net/caimouse/article/details/79263911   
-[（3）-模板](https://blog.csdn.net/caimouse/article/details/79289051   
+[（1）-web.py简介和安装](https://blog.csdn.net/caimouse/article/details/79254632)  
+[（2）-URL处理](https://blog.csdn.net/caimouse/article/details/79263911)  
+[（3）-模板](https://blog.csdn.net/caimouse/article/details/79289051)  
 [（4）-从数据库读取数据显示到网页](https://blog.csdn.net/caimouse/article/details/79297728  
 [（5）-把网页的数据写到数据库](https://blog.csdn.net/caimouse/article/details/79339247  
 [（6）-webpy在模板里使用code代码段错误的问题](https://blog.csdn.net/caimouse/article/details/79342871  
