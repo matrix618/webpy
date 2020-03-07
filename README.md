@@ -8,3 +8,7 @@ pip install mysql-connector
 phpStudy
 
 quote website
+
+		g
+		gg
+		
