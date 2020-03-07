@@ -9,6 +9,6 @@ phpStudy
 
 quote website
 
-		g
-		gg
+		[web.py简介和安装](https://blog.csdn.net/caimouse/article/details/79254632)  
+		[URL处理](https://blog.csdn.net/caimouse/article/details/79263911)  
 		
