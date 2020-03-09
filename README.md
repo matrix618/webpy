@@ -3,7 +3,7 @@
 study https://blog.csdn.net/caimouse/category_7445116.html note.
 
 support:
-pip install web-py
+pip install web-py -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install mysql-connector
 phpStudy
 
