@@ -67,7 +67,7 @@ class pictureupload:
         web.header("Content-Type","text/html; charset=utf-8")
         return """<html><head><title>Upload</title></head><body>
 <form method="POST" enctype="multipart/form-data" action="">
-<input type="file" name="myfile" />
+<input type="file" name="myfile" /><input type="file" name="myfile1" /><input type="file" name="myfile2" />
 <br/>
 <input type="txt" name="mykey" />
 <br/>
@@ -80,6 +80,8 @@ class pictureupload:
         areyouok=False
         
         x = web.input(myfile = {})
+        x1 = web.input(myfile1 = {})
+        x2 = web.input(myfile2 = {})
  
 ##        if 'mykey' in x:
 ##            bkey=x.mykey
@@ -129,7 +131,8 @@ class pictureupload:
             try:
                 filepath = x.myfile.filename.replace('\\','/')  
                 filename = filepath.split('/')[-1]  
-                filename = str(uuid.uuid1()) + '_' + filename  #guid 
+                filename = str(uuid.uuid1()) + '_' + filename  #guid
+                print(filename)
                 fout = open(filedir +'/'+ filename,'wb')  
                 fout.write(x.myfile.file.read()) # writes  
     #            fout.write(x.myfile.value) # writes the uploaded file to the newly created file.
@@ -138,6 +141,35 @@ class pictureupload:
             except:
                 pass
 
+        if 'myfile1' in x1:
+            try:
+                filepath = x1.myfile1.filename.replace('\\','/')  
+                filename = filepath.split('/')[-1]  
+                filename = str(uuid.uuid1()) + '_' + filename  #guid
+                print(filename)
+                fout = open(filedir +'/'+ filename,'wb')  
+                fout.write(x1.myfile1.file.read()) # writes  
+    #            fout.write(x.myfile.value) # writes the uploaded file to the newly created file.
+                fout.close()  
+                areyouok=True
+            except:
+                pass
+
+        if 'myfile2' in x2:
+            try:
+                filepath = x2.myfile2.filename.replace('\\','/')  
+                filename = filepath.split('/')[-1]  
+                filename = str(uuid.uuid1()) + '_' + filename  #guid
+                print(filename)
+                fout = open(filedir +'/'+ filename,'wb')  
+                fout.write(x2.myfile2.file.read()) # writes  
+    #            fout.write(x.myfile.value) # writes the uploaded file to the newly created file.
+                fout.close()  
+                areyouok=True
+            except:
+                pass
+
+            
         #code
         
              
